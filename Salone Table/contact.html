@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Salone Table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Salone Table</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+    </nav>
+    <a class="btn header-cta" href="#book">Book a table</a>
+  </div>
+</header>
+<main><div class="wrap">
+<p class="note">Visit or get in touch</p>
+<h1>We&apos;ll help you find your table.</h1>
+<div class="grid g2" id="book">
+  <div class="card"><h2>Restaurant details</h2><p>Address: Sumalia Town, Freetown, Sierra Leone</p><p>Phone: +232 33 672 309</p><p>Hours: confirm with client</p></div>
+  <div class="map-card">
+    <iframe
+      class="location-map"
+      title="Map centered on Freetown, Sierra Leone"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-13.27%2C8.43%2C-13.18%2C8.50&amp;layer=mapnik&amp;marker=8.4657%2C-13.2317"
+      loading="lazy"
+      referrerpolicy="no-referrer">
+    </iframe>
+    <p class="map-caption">Map centered on Freetown. The restaurant&apos;s exact location is to be confirmed. <a href="https://www.openstreetmap.org/?mlat=8.4657&amp;mlon=-13.2317#map=14/8.4657/-13.2317" target="_blank" rel="noopener noreferrer">View larger map</a></p>
+  </div>
+</div>
+<section class="contact-question">
+  <h2>Send a question</h2>
+  <form id="whatsapp-contact-form" class="card">
+    <div class="grid g2">
+      <div>
+        <label for="contact-name">Name</label>
+        <input id="contact-name" name="name" autocomplete="name" required>
+      </div>
+      <div>
+        <label for="contact-method">Phone or email</label>
+        <input id="contact-method" name="contact" autocomplete="email" required>
+      </div>
+    </div>
+    <label for="contact-message">Message</label>
+    <textarea id="contact-message" name="message" rows="4" placeholder="What can we help with?" required></textarea>
+    <button class="btn" type="submit">Send message</button>
+  </form>
+</section>
+</div></main>
+<footer>
+  <div class="wrap">
+    <div><h4>Salone Table</h4><p>Good food and good company in Freetown.</p></div>
+    <div><h4>Explore</h4><p><a href="index.html">Home</a> · <a href="menu.html">Menu</a> · <a href="about.html">About</a> · <a href="services.html">Services</a> · <a href="contact.html">Contact</a></p></div>
+  </div>
+</footer>
+<script>
+  const contactForm = document.querySelector("#whatsapp-contact-form");
+
+  contactForm.addEventListener("submit", event => {
+    event.preventDefault();
+    const formData = new FormData(contactForm);
+    const message = [
+      "Hello Salone Table, I have a question.",
+      `Name: ${formData.get("name")}`,
+      `Phone or email: ${formData.get("contact")}`,
+      `Message: ${formData.get("message")}`
+    ].join("\n");
+
+    window.location.href = `https://wa.me/23233672309?text=${encodeURIComponent(message)}`;
+  });
+</script>
+</body>
+</html>

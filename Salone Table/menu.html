@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu · Salone Table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html">Salone Table</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active" aria-current="page">Menu</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn header-cta" href="contact.html#book">Book a table</a>
+  </div>
+</header>
+<main><div class="wrap">
+<p class="eyebrow">Major feature / menu and pickup</p>
+<h1>Choose your favourites.</h1>
+<p class="lead">Choose from Sierra Leonean stews, rice dishes, grilled favourites and refreshing drinks. Contact the restaurant to place a pickup order and confirm availability.</p>
+<div class="menu-layout">
+<div class="menu-content">
+  <label class="sr-only" for="menu-search">Search dishes</label>
+  <input id="menu-search" type="search" placeholder="Search dishes">
+  <div class="chips" id="menu-categories" role="group" aria-label="Filter dishes by category">
+    <button class="chip" type="button" data-category="All dishes" aria-pressed="true">All dishes</button>
+    <button class="chip" type="button" data-category="Rice" aria-pressed="false">Rice</button>
+    <button class="chip" type="button" data-category="Stews" aria-pressed="false">Stews</button>
+    <button class="chip" type="button" data-category="Grill" aria-pressed="false">Grill</button>
+    <button class="chip" type="button" data-category="Drinks" aria-pressed="false">Drinks</button>
+  </div>
+  <p id="menu-empty-state" class="card note" role="status" hidden>No dishes match your search.</p>
+  <div class="grid g2 menu-items" id="menu-items">
+  <article class="card dish-card" data-item-id="cassava-leaves" data-category="Stews" data-name="Cassava leaves" data-price="45000"><img class="dish-image" src="images/cassava-leaves.png" alt="Bowl of cassava leaf stew with seafood" loading="lazy"><div class="dish-details"><h2>Cassava leaves</h2><p class="dish-description">Traditional cassava leaves with rich seasoning and sides.</p><p class="price">SLE 45,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="groundnut-stew" data-category="Stews" data-name="Groundnut stew" data-price="42000"><img class="dish-image" src="images/groundnut-stew.png" alt="Rich groundnut stew with chicken" loading="lazy"><div class="dish-details"><h2>Groundnut stew</h2><p class="dish-description">Creamy groundnut stew with savoury chicken and vegetables.</p><p class="price">SLE 42,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="grilled-fish" data-category="Grill" data-name="Grilled fish" data-price="40000"><img class="dish-image" src="images/grilled-fish.png" alt="Whole fish grilling over an open flame" loading="lazy"><div class="dish-details"><h2>Grilled fish</h2><p class="dish-description">Locally grilled fish served with a fresh side dish.</p><p class="price">SLE 40,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="beef-skewers" data-category="Grill" data-name="Beef skewers" data-price="48000"><img class="dish-image" src="images/beef-skewers.png" alt="Grilled beef and vegetable skewers served with sauce" loading="lazy"><div class="dish-details"><h2>Beef skewers</h2><p class="dish-description">Tender grilled beef with peppers and herbs.</p><p class="price">SLE 48,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="grilled-shrimp" data-category="Grill" data-name="Grilled shrimp" data-price="52000"><img class="dish-image" src="images/grilled-shrimp.png" alt="Grilled shrimp with lime and herbs" loading="lazy"><div class="dish-details"><h2>Grilled shrimp</h2><p class="dish-description">Succulent shrimp with lemon and house seasoning.</p><p class="price">SLE 52,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="mixed-grill" data-category="Grill" data-name="Mixed grill platter" data-price="70000"><img class="dish-image" src="images/mixed-grill.png" alt="Platter of grilled meats, fries, and dipping sauce" loading="lazy"><div class="dish-details"><h2>Mixed grill platter</h2><p class="dish-description">A generous platter of grilled meats and sides.</p><p class="price">SLE 70,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="grilled-lamb-chops" data-category="Grill" data-name="Grilled lamb chops" data-price="60000"><img class="dish-image" src="images/grilled-lamb-chops.png" alt="Seasoned grilled lamb chops with herbs" loading="lazy"><div class="dish-details"><h2>Grilled lamb chops</h2><p class="dish-description">Char-grilled lamb chops with a bold seasoning finish.</p><p class="price">SLE 60,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="lemon-grilled-fish" data-category="Grill" data-name="Lemon grilled fish" data-price="46000"><img class="dish-image" src="images/lemon-grilled-fish.png" alt="Whole grilled fish served with lemon slices" loading="lazy"><div class="dish-details"><h2>Lemon grilled fish</h2><p class="dish-description">Whole fish grilled to order and finished with lemon.</p><p class="price">SLE 46,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="krain-krain" data-category="Stews" data-name="Krain krain" data-price="38000"><img class="dish-image" src="images/krain-krain-user.png" alt="Bowl of krain krain stew with leafy greens and meat" loading="lazy"><div class="dish-details"><h2>Krain krain</h2><p class="dish-description">A hearty leafy stew with bold local flavour.</p><p class="price">SLE 38,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="bean-stew" data-category="Stews" data-name="Bean stew" data-price="35000"><img class="dish-image" src="images/bean-stew.png" alt="Bowl of hearty bean stew" loading="lazy"><div class="dish-details"><h2>Bean stew</h2><p class="dish-description">Slow-cooked bean stew with savoury depth and spice.</p><p class="price">SLE 35,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="leafy-stew" data-category="Stews" data-name="Leafy stew" data-price="33000"><img class="dish-image" src="images/leafy-stew.png" alt="Traditional green leafy stew" loading="lazy"><div class="dish-details"><h2>Leafy stew</h2><p class="dish-description">Nutritious green leafy stew, comfort-food classic.</p><p class="price">SLE 33,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="beef-stew" data-category="Stews" data-name="Beef stew" data-price="44000"><img class="dish-image" src="images/beef-stew.png" alt="Beef pieces served in a rich red stew" loading="lazy"><div class="dish-details"><h2>Beef stew</h2><p class="dish-description">Rich beef stew with tender chunks and warming sauce.</p><p class="price">SLE 44,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="rice-chicken-stew" data-category="Rice" data-name="Rice with chicken stew" data-price="36000"><img class="dish-image" src="images/rice-chicken-stew.png" alt="White rice served with chicken in tomato stew" loading="lazy"><div class="dish-details"><h2>Rice with chicken stew</h2><p class="dish-description">Classic rice and chicken stew platter.</p><p class="price">SLE 36,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="fried-rice-chicken" data-category="Rice" data-name="Fried rice with chicken" data-price="32000"><img class="dish-image" src="images/fried-rice-chicken.png" alt="Vegetable fried rice served with roasted chicken" loading="lazy"><div class="dish-details"><h2>Fried rice with chicken</h2><p class="dish-description">Wok-fried rice with chicken and vegetables.</p><p class="price">SLE 32,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="jollof-rice-beef" data-category="Rice" data-name="Jollof rice with beef" data-price="30000"><img class="dish-image" src="images/jollof-rice-beef.png" alt="Jollof rice served with grilled beef" loading="lazy"><div class="dish-details"><h2>Jollof rice with beef</h2><p class="dish-description">Flavour-packed jollof rice with grilled beef.</p><p class="price">SLE 30,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="soda-mix" data-category="Drinks" data-name="Soft drinks" data-price="8000"><img class="dish-image" src="images/soda-mix.png" alt="Bottles of Fanta, Sprite, and cola" loading="lazy"><div class="dish-details"><h2>Soft drinks</h2><p class="dish-description">Assorted bottled soft drinks to cool the meal.</p><p class="price">SLE 8,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="orange-soda" data-category="Drinks" data-name="Orange soda" data-price="7000"><img class="dish-image" src="images/orange-soda.png" alt="Bottles of orange soda" loading="lazy"><div class="dish-details"><h2>Orange soda</h2><p class="dish-description">Refreshing orange soda served chilled.</p><p class="price">SLE 7,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+  <article class="card dish-card" data-item-id="bottled-soft-drinks" data-category="Drinks" data-name="Bottled soft drinks" data-price="9000"><img class="dish-image" src="images/bottled-soft-drinks.png" alt="Assorted bottled soft drinks" loading="lazy"><div class="dish-details"><h2>Bottled soft drinks</h2><p class="dish-description">Selection of bottled sodas for the table.</p><p class="price">SLE 9,000</p><button class="btn add-dish" type="button" data-add-item>Add</button></div></article>
+</div>
+</div>
+<aside class="card cart pickup-cart" aria-label="Pickup order">
+  <h2>Pickup order</h2>
+  <p class="note cart-label">Your items</p>
+  <ul id="order-items"><li class="empty-cart">No items added yet</li></ul>
+  <div class="cart-total"><span>Subtotal</span><strong id="order-subtotal">SLE —</strong></div>
+  <div class="cart-total"><span>Pickup time</span><strong id="pickup-time-summary">Choose next</strong></div>
+  <button class="btn cart-next" id="continue-order" type="button" disabled>Continue to pickup details</button>
+  <form id="pickup-details-form" hidden>
+    <label for="order-customer-name">Name</label>
+    <input id="order-customer-name" name="name" autocomplete="name" required>
+    <label for="order-customer-phone">Phone</label>
+    <input id="order-customer-phone" name="phone" type="tel" autocomplete="tel" required>
+    <label for="order-pickup-time">Pickup time</label>
+    <input id="order-pickup-time" name="time" type="time" required>
+    <button class="btn" type="submit">Prepare WhatsApp order</button>
+  </form>
+  <div class="request-flow"><strong>Request flow</strong><ol><li>Select dishes</li><li>Add name, phone and pickup time</li><li>Send order request via WhatsApp</li></ol></div>
+  <p class="payment-note"><strong>No online payment assumed.</strong><br>Confirm accepted payment methods.</p>
+</aside>
+</div>
+<p class="note menu-disclaimer">Menu items and prices are examples and must be confirmed with the restaurant before ordering.</p>
+</div></main>
+<footer>
+  <div class="wrap">
+    <div><h4>Salone Table</h4><p>Good food and good company in Freetown.</p></div>
+    <div><h4>Explore</h4><p><a href="index.html">Home</a> · <a href="menu.html">Menu</a> · <a href="about.html">About</a> · <a href="services.html">Services</a> · <a href="contact.html">Contact</a></p></div>
+  </div>
+</footer>
+<script>
+  const menuItems = document.querySelector("#menu-items");
+  const orderItems = document.querySelector("#order-items");
+  const subtotal = document.querySelector("#order-subtotal");
+  const continueOrder = document.querySelector("#continue-order");
+  const pickupDetailsForm = document.querySelector("#pickup-details-form");
+  const pickupTimeSummary = document.querySelector("#pickup-time-summary");
+  const menuSearch = document.querySelector("#menu-search");
+  const categoryFilters = document.querySelector("#menu-categories");
+  const emptyState = document.querySelector("#menu-empty-state");
+  const cart = new Map();
+  let activeCategory = "All dishes";
+
+  const filterDishes = () => {
+    const query = menuSearch.value.trim().toLowerCase();
+    const dishes = [...menuItems.querySelectorAll("[data-item-id]")];
+    let visibleCount = 0;
+
+    dishes.forEach(dish => {
+      const text = `${dish.dataset.name} ${dish.dataset.category} ${dish.querySelector(".dish-description").textContent}`.toLowerCase();
+      const matchesCategory = activeCategory === "All dishes" || dish.dataset.category === activeCategory;
+      const matchesSearch = text.includes(query);
+      dish.hidden = !(matchesCategory && matchesSearch);
+      if (!dish.hidden) visibleCount++;
+    });
+
+    emptyState.hidden = visibleCount > 0;
+  };
+
+  const renderOrder = () => {
+    orderItems.replaceChildren();
+    if (cart.size === 0) {
+      const empty = document.createElement("li");
+      empty.className = "empty-cart";
+      empty.textContent = "No items added yet";
+      orderItems.append(empty);
+      subtotal.textContent = "SLE —";
+      continueOrder.disabled = true;
+      return;
+    }
+
+    let total = 0;
+    cart.forEach((quantity, id) => {
+      const dish = menuItems.querySelector(`[data-item-id="${id}"]`);
+      const name = dish.dataset.name;
+      const price = Number(dish.dataset.price);
+      total += price * quantity;
+
+      const row = document.createElement("li");
+      row.className = "cart-item";
+      const label = document.createElement("span");
+      label.textContent = `${name} × ${quantity}`;
+      const removeButton = document.createElement("button");
+      removeButton.type = "button";
+      removeButton.textContent = "Remove";
+      removeButton.setAttribute("aria-label", `Remove one ${name} from pickup order`);
+      removeButton.addEventListener("click", () => {
+        if (quantity === 1) cart.delete(id);
+        else cart.set(id, quantity - 1);
+        renderOrder();
+      });
+      row.append(label, removeButton);
+      orderItems.append(row);
+    });
+
+    subtotal.textContent = `SLE ${total.toLocaleString()}`;
+    continueOrder.disabled = false;
+  };
+
+  menuItems.addEventListener("click", event => {
+    const addButton = event.target.closest("[data-add-item]");
+    if (!addButton) return;
+    const dish = addButton.closest("[data-item-id]");
+    const id = dish.dataset.itemId;
+    cart.set(id, (cart.get(id) || 0) + 1);
+    renderOrder();
+  });
+
+  menuSearch.addEventListener("input", filterDishes);
+  categoryFilters.addEventListener("click", event => {
+    const categoryButton = event.target.closest("[data-category]");
+    if (!categoryButton) return;
+
+    activeCategory = categoryButton.dataset.category;
+    categoryFilters.querySelectorAll("[data-category]").forEach(button => {
+      button.setAttribute("aria-pressed", String(button === categoryButton));
+    });
+    filterDishes();
+  });
+
+  continueOrder.addEventListener("click", () => {
+    pickupDetailsForm.hidden = false;
+    pickupDetailsForm.querySelector("input").focus();
+  });
+
+  pickupDetailsForm.addEventListener("input", event => {
+    if (event.target.name === "time") {
+      pickupTimeSummary.textContent = event.target.value || "Choose next";
+    }
+  });
+
+  pickupDetailsForm.addEventListener("submit", event => {
+    event.preventDefault();
+    const formData = new FormData(pickupDetailsForm);
+    const lines = [...cart].map(([id, quantity]) => {
+      const dish = menuItems.querySelector(`[data-item-id="${id}"]`);
+      return `${quantity} x ${dish.dataset.name}`;
+    });
+    const message = [
+      "Hello Salone Table, I would like to place a pickup order.",
+      `Name: ${formData.get("name")}`,
+      `Phone: ${formData.get("phone")}`,
+      `Pickup time: ${formData.get("time")}`,
+      "Items:",
+      ...lines,
+      `Estimated subtotal: ${subtotal.textContent}`,
+      "Please confirm availability, final prices, and accepted payment methods."
+    ].join("\n");
+    window.location.href = `https://wa.me/23233672309?text=${encodeURIComponent(message)}`;
+  });
+
+  filterDishes();
+</script>
+</body>
+</html>
