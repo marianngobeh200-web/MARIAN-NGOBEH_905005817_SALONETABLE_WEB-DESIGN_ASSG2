@@ -81,6 +81,23 @@ The HTML files are at the project root, so no build output folder is needed.
 └── .vscode/
     └── settings.json
 ```
+                                                                                                                                             CREATED BY: MARIAN NGOBEH
+                                                                                                                                             
+
+HOME PAGE
+<img width="1365" height="1466" alt="Screenshot 2026-10-23 at 11-15-47 Home · Salone Table" src="https://github.com/user-attachments/assets/1d23937b-3423-4cff-b6b6-29deceb92e70" />
+
+MENU PAGE
+<img width="1365" height="1777" alt="Screenshot 2026-10-23 at 09-47-13 Menu · Salone Table" src="https://github.com/user-attachments/assets/0091f429-79db-4fc2-841d-df0fd828d0f2" />
+
+ABOUT PAGE
+<img width="1365" height="1547" alt="Screenshot 2026-10-23 at 09-47-29 About · Salone Table" src="https://github.com/user-attachments/assets/36d51138-4b3b-479f-82a9-59e1478036e3" />
+
+SERVICES PAGE
+<img width="1365" height="1296" alt="Screenshot 2026-10-23 at 09-47-50 Services · Salone Table" src="https://github.com/user-attachments/assets/4f3dec92-3b18-4416-b81f-6cdff52ca172" />
+
+CONTACT PAGE
+<img width="1365" height="1163" alt="Screenshot 2026-10-23 at 09-48-18 Contact · Salone Table" src="https://github.com/user-attachments/assets/fd751564-07fb-4872-813f-61a2081c4dee" />
 
 
-                                                                              CREATED BY: MARIAN NGOBEH
+                                                                                                                                             
